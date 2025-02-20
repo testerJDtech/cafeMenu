@@ -21,6 +21,11 @@ type, class, id, universal and many others. */
     background-color: burlywood;
     margin-left: auto;
     margin-right: auto;
+
+    /* You can use padding-left and padding-right to give some space between your content and the sides */
+    /* if you have all your content having the same spacing for padding, you can just use a singular 
+    padding element to make your code neater */
+    padding: 20px;
 }
 
 /* Use the line of code below to style elements selected to but them on the same line.
@@ -33,12 +38,12 @@ Block level elements start on a new line, stacking vertically and usually take u
 }
 
 
-.flavor {
+.flavor, .dessert {
     text-align: left;
-    width: 50%;
+    width: 75%;
 }
 
 .price {
     text-align: right;
-    width: 50%;
+    width: 25%;
 }
