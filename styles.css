@@ -12,7 +12,7 @@ body {
 }
 
 
-/* You can use different id selectors to style elements. Examples include; 
+/* You can use different selectors to style elements, it doesn't just have to be id. Examples include; 
 type, class, id, universal and many others. */
 .menu {
     width: 80%;
