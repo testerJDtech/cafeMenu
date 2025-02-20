@@ -10,7 +10,20 @@ h1, h2, p {
 body {
     /* You can use the line of code below to include a background image to your site */
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+
+    /* Use font-family property to change the font of the text from the default */
+    font-family: sans-serif;
+    padding: 20px;
 }
+
+/* You can change the default values/settings of how heading elements are displayed */
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+
 
 
 /* You can use different selectors to style elements, it doesn't just have to be id. Examples include; 
@@ -26,6 +39,31 @@ type, class, id, universal and many others. */
     /* if you have all your content having the same spacing for padding, you can just use a singular 
     padding element to make your code neater */
     padding: 20px;
+
+    /* You can use max-width property to manage how big you want your element to be and so it doesn't just stick to the defauilt */
+    max-width: 500px;
+}
+
+
+/* You can change the style of the <hr> element using the same format as you use for styling other elements*/
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+
+.bottom-line {
+    margin-top: 25px;
+}
+
+h1, h2 {
+    font-family: Impact, serif;
+    /* You can use a fallback property for instances where the initial font may not be able to be found or is available.
+    More time this will just go on the same line as your first font family.*/ 
+}
+
+.established {
+    font-style: italic;
 }
 
 /* Use the line of code below to style elements selected to but them on the same line.
@@ -35,6 +73,9 @@ Block level elements start on a new line, stacking vertically and usually take u
     display: inline-block;
     /* Note: inline-block elements only take up the width of their content therefore, you need to spread them out 
     by add a width property to class selectors you are working witb. */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
 }
 
 
@@ -46,4 +87,25 @@ Block level elements start on a new line, stacking vertically and usually take u
 .price {
     text-align: right;
     width: 25%;
+}
+
+/* FOOTER */
+footer {
+    font-size: 14px;
+}
+
+a {
+    color: black;
+}
+
+/*You change properties of a link when the link has actually been visited by using a 
+pseudo-selector that looks like a:visited { propertyName: propertyValue; }. */
+a:visited {
+    color: grey;
+}
+
+/*You change properties of a link when the mouse hovers over them by using a 
+pseudo-selector that looks like a:hover { propertyName: propertyValue; } */
+a:hover {
+    color: brown;
 }
