@@ -1,0 +1,8 @@
+/* Lines 6-8 include a type selector in which it can be used to style the elements on the page. *
+/*--The CSS rules inside the style element apply to the HTML elements specified by the selectors */
+/* Most of the time type selectors will include the following:
+selector/s, properties and a value. */
+
+h1, h2, p {
+    text-align: center;
+}
