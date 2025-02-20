@@ -8,15 +8,37 @@ h1, h2, p {
 }
 
 body {
-    /* background-color: burlywood; */
+    /* You can use the line of code below to include a background image to your site */
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
 }
 
 
 /* You can use different selectors to style elements, it doesn't just have to be id. Examples include; 
 type, class, id, universal and many others. */
+/* If you change what selector you use in css file, make sure to change it in the html file as well. */
 .menu {
     width: 80%;
     background-color: burlywood;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Use the line of code below to style elements selected to but them on the same line.
+This is mostly used with elements inside <p> because they are block level elements so they mostly always start on a new line. 
+Block level elements start on a new line, stacking vertically and usually take up the full width*/
+.item p {
+    display: inline-block;
+    /* Note: inline-block elements only take up the width of their content therefore, you need to spread them out 
+    by add a width property to class selectors you are working witb. */
+}
+
+
+.flavor {
+    text-align: left;
+    width: 50%;
+}
+
+.price {
+    text-align: right;
+    width: 50%;
 }
