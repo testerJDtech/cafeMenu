@@ -19,7 +19,10 @@ body {
 /* You can change the default values/settings of how heading elements are displayed */
 h1 {
     font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
+
 h2 {
     font-size: 30px;
 }
@@ -44,6 +47,12 @@ type, class, id, universal and many others. */
     max-width: 500px;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+  }
 
 /* You can change the style of the <hr> element using the same format as you use for styling other elements*/
 hr {
@@ -101,11 +110,21 @@ a {
 /*You change properties of a link when the link has actually been visited by using a 
 pseudo-selector that looks like a:visited { propertyName: propertyValue; }. */
 a:visited {
-    color: grey;
+    color: black;
 }
 
 /*You change properties of a link when the mouse hovers over them by using a 
 pseudo-selector that looks like a:hover { propertyName: propertyValue; } */
 a:hover {
     color: brown;
+}
+
+/* You change properties of a link when the link is actually being clicked by using a 
+pseudo-selector that looks like a:active { propertyName: propertyValue; }. */
+a:active {
+    color: brown;
+}
+
+.address {
+    margin-bottom: 5px;
 }
